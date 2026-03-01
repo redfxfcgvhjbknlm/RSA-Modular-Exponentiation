@@ -197,7 +197,7 @@ endmodule
 // Description: Computes (base ^ exp) mod M in constant time.
 // Note: Instantiates two REDC multipliers for side-channel attack resistance.
 // =============================================================================
-module montgomery_ladder #(
+module RSA #(
     parameter W = 32
 )(
     input  wire           clk,
@@ -331,4 +331,5 @@ module montgomery_ladder #(
             endcase
         end
     end
+
 endmodule
